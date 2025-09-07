@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/stylesheets/dining.css" class="css">
+  <link rel="stylesheet" href="/stylesheets/navbar.css" class="css">
+  <link rel="stylesheet" href="/stylesheets/footer.css" class="css">
+  <link rel="icon" type="image/x-icon" href="assets/image/favicon.ico">
+  <title>Ayodhya tourism services - Find your taste here </title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo"><img src="/assets/image/logo.svg" alt="logo"></div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="shuttles.html">Shuttles</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="guides.html">Guides</a></li>
+      <li><a href="dining.html" class="active">Dining</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login-signup-forgot-password.html" class="btn-login">Log-in</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hero-content">
+      <h1>Culinary Experiences</h1>
+      <p>Discover authentic flavors and unforgettable dining experiences around the world</p>
+    </div>
+  </section>
+
+  <section class="dining-intro">
+    <div class="container">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h2>Taste the World with Us</h2>
+          <p>Food is an essential part of travel, and we're here to help you discover the most authentic, delicious, and memorable culinary experiences. From street food tours to Michelin-star restaurants, cooking classes to food festivals - we connect you with the heart of every destination through its cuisine.</p>
+          <div class="intro-stats">
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Restaurant Partners</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">60</span>
+              <span class="stat-label">Countries</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">12</span>
+              <span class="stat-label">Food Tour Types</span>
+            </div>
+          </div>
+        </div>
+        <div class="intro-image">
+          <img src="/assets/image/dining-intro.jpg" alt="Culinary experience">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="discovery-section">
+    <div class="container">
+      <h2>Find Your Perfect Dining Experience</h2>
+      <div class="discovery-options">
+        <div class="discovery-card">
+          <div class="discovery-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3>Restaurant Reservations</h3>
+          <p>Book tables at top-rated restaurants with exclusive benefits</p>
+          <button class="discovery-btn" data-type="restaurants">Explore Restaurants</button>
+        </div>
+        
+        <div class="discovery-card">
+          <div class="discovery-icon">
+            <i class="fas fa-street-view"></i>
+          </div>
+          <h3>Food Tours</h3>
+          <p>Guided culinary adventures through local markets and hidden gems</p>
+          <button class="discovery-btn" data-type="tours">Explore Food Tours</button>
+        </div>
+        
+        <div class="discovery-card">
+          <div class="discovery-icon">
+            <i class="fas fa-mortar-pestle"></i>
+          </div>
+          <h3>Cooking Classes</h3>
+          <p>Learn authentic recipes from local chefs and culinary experts</p>
+          <button class="discovery-btn" data-type="classes">Explore Classes</button>
+        </div>
+        
+        <div class="discovery-card">
+          <div class="discovery-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3>Food Events</h3>
+          <p>Festivals, tastings, and special culinary events around the world</p>
+          <button class="discovery-btn" data-type="events">Explore Events</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-restaurants">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Restaurants</h2>
+        <p>Handpicked dining establishments offering exceptional experiences</p>
+      </div>
+      
+      <div class="filters">
+        <div class="filter-group">
+          <label for="cuisine">Cuisine</label>
+          <select id="cuisine">
+            <option value="">All Cuisines</option>
+            <option value="italian">Italian</option>
+            <option value="asian">Asian</option>
+            <option value="french">French</option>
+            <option value="local">Local</option>
+            <option value="fusion">Fusion</option>
+            <option value="seafood">Seafood</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="price">Price Range</label>
+          <select id="price">
+            <option value="">Any Price</option>
+            <option value="1">$ (Budget)</option>
+            <option value="2">$$ (Moderate)</option>
+            <option value="3">$$$ (Expensive)</option>
+            <option value="4">$$$$ (Luxury)</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="rating">Minimum Rating</label>
+          <select id="rating">
+            <option value="">Any Rating</option>
+            <option value="4">4★ & Up</option>
+            <option value="4.5">4.5★ & Up</option>
+            <option value="5">5★ Only</option>
+          </select>
+        </div>
+        
+        <button class="filter-btn">Apply Filters</button>
+      </div>
+      
+      <div class="restaurants-grid">
+        <div class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="/assets/image/restaurant-1.jpg" alt="La Bella Vita">
+            <div class="restaurant-badge">Top Rated</div>
+            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="restaurant-content">
+            <h3>La Bella Vita</h3>
+            <p class="restaurant-location"><i class="fas fa-map-marker-alt"></i> Rome, Italy</p>
+            <div class="restaurant-info">
+              <span class="cuisine-type">Italian</span>
+              <span class="price-range">$$$</span>
+            </div>
+            <div class="rating">
+              <div class="stars">★★★★★</div>
+              <span class="rating-score">4.9</span>
+              <span class="review-count">(428 reviews)</span>
+            </div>
+            <p class="restaurant-description">Authentic Italian cuisine with a modern twist, featuring homemade pasta and locally sourced ingredients.</p>
+            <div class="restaurant-features">
+              <span><i class="fas fa-wine-glass"></i> Wine Pairing</span>
+              <span><i class="fas fa-leaf"></i> Vegetarian Options</span>
+            </div>
+            <div class="restaurant-actions">
+              <button class="view-menu-btn">View Menu</button>
+              <button class="reserve-btn">Make Reservation</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="/assets/image/restaurant-2.jpg" alt="Sakura Garden">
+            <div class="restaurant-badge popular">Popular</div>
+            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="restaurant-content">
+            <h3>Sakura Garden</h3>
+            <p class="restaurant-location"><i class="fas fa-map-marker-alt"></i> Kyoto, Japan</p>
+            <div class="restaurant-info">
+              <span class="cuisine-type">Japanese</span>
+              <span class="price-range">$$$$</span>
+            </div>
+            <div class="rating">
+              <div class="stars">★★★★★</div>
+              <span class="rating-score">4.95</span>
+              <span class="review-count">(312 reviews)</span>
+            </div>
+            <p class="restaurant-description">Traditional kaiseki dining experience in a serene garden setting with seasonal ingredients.</p>
+            <div class="restaurant-features">
+              <span><i class="fas fa-fish"></i> Fresh Sushi</span>
+              <span><i class="fas fa-mountain"></i> Garden View</span>
+            </div>
+            <div class="restaurant-actions">
+              <button class="view-menu-btn">View Menu</button>
+              <button class="reserve-btn">Make Reservation</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="/assets/image/restaurant-3.jpg" alt="Le Marché">
+            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="restaurant-content">
+            <h3>Le Marché</h3>
+            <p class="restaurant-location"><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+            <div class="restaurant-info">
+              <span class="cuisine-type">French</span>
+              <span class="price-range">$$</span>
+            </div>
+            <div class="rating">
+              <div class="stars">★★★★☆</div>
+              <span class="rating-score">4.7</span>
+              <span class="review-count">(195 reviews)</span>
+            </div>
+            <p class="restaurant-description">Charming bistro offering classic French dishes with a focus on fresh market ingredients.</p>
+            <div class="restaurant-features">
+              <span><i class="fas fa-bread-slice"></i> Fresh Baked</span>
+              <span><i class="fas fa-cheese"></i> Cheese Selection</span>
+            </div>
+            <div class="restaurant-actions">
+              <button class="view-menu-btn">View Menu</button>
+              <button class="reserve-btn">Make Reservation</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="/assets/image/restaurant-4.jpg" alt="Spice Route">
+            <div class="restaurant-badge new">New</div>
+            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="restaurant-content">
+            <h3>Spice Route</h3>
+            <p class="restaurant-location"><i class="fas fa-map-marker-alt"></i> Bangkok, Thailand</p>
+            <div class="restaurant-info">
+              <span class="cuisine-type">Thai Fusion</span>
+              <span class="price-range">$$</span>
+            </div>
+            <div class="rating">
+              <div class="stars">★★★★★</div>
+              <span class="rating-score">4.8</span>
+              <span class="review-count">(87 reviews)</span>
+            </div>
+            <p class="restaurant-description">Innovative Thai cuisine blending traditional flavors with modern culinary techniques.</p>
+            <div class="restaurant-features">
+              <span><i class="fas fa-pepper-hot"></i> Spicy Options</span>
+              <span><i class="fas fa-cocktail"></i> Craft Cocktails</span>
+            </div>
+            <div class="restaurant-actions">
+              <button class="view-menu-btn">View Menu</button>
+              <button class="reserve-btn">Make Reservation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="view-all">
+        <button class="view-all-btn">View All Restaurants</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="food-tours">
+    <div class="container">
+      <div class="section-header">
+        <h2>Popular Food Tours</h2>
+        <p>Guided culinary adventures led by local food experts</p>
+      </div>
+      
+      <div class="tours-grid">
+        <div class="tour-card">
+          <div class="tour-image">
+            <img src="/assets/image/food-tour-1.jpg" alt="Street Food Tour">
+            <div class="tour-duration">3 hours</div>
+          </div>
+          <div class="tour-content">
+            <h3>Bangkok Street Food Adventure</h3>
+            <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Bangkok, Thailand</p>
+            <div class="tour-info">
+              <span><i class="fas fa-user-friends"></i> Small Group</span>
+              <span><i class="fas fa-utensils"></i> 10+ Tastings</span>
+            </div>
+            <p class="tour-description">Explore Bangkok's vibrant street food scene and sample authentic Thai dishes from local vendors.</p>
+            <div class="tour-price">
+              <span class="price">$45</span>
+              <span class="per-person">per person</span>
+            </div>
+            <button class="book-tour-btn">Book Tour</button>
+          </div>
+        </div>
+        
+        <div class="tour-card">
+          <div class="tour-image">
+            <img src="/assets/image/food-tour-2.jpg" alt="Wine Tasting Tour">
+            <div class="tour-duration">4 hours</div>
+          </div>
+          <div class="tour-content">
+            <h3>Tuscany Wine & Cheese Experience</h3>
+            <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Florence, Italy</p>
+            <div class="tour-info">
+              <span><i class="fas fa-wine-glass"></i> Wine Tasting</span>
+              <span><i class="fas fa-cheese"></i> Cheese Pairing</span>
+            </div>
+            <p class="tour-description">Visit local vineyards and cheese producers in the heart of Tuscany with expert sommelier guidance.</p>
+            <div class="tour-price">
+              <span class="price">$89</span>
+              <span class="per-person">per person</span>
+            </div>
+            <button class="book-tour-btn">Book Tour</button>
+          </div>
+        </div>
+        
+        <div class="tour-card">
+          <div class="tour-image">
+            <img src="/assets/image/food-tour-3.jpg" alt="Market Tour">
+            <div class="tour-duration">2.5 hours</div>
+          </div>
+          <div class="tour-content">
+            <h3>Tokyo Fish Market Tour</h3>
+            <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</p>
+            <div class="tour-info">
+              <span><i class="fas fa-fish"></i> Fresh Seafood</span>
+              <span><i class="fas fa-egg"></i> Sushi Making</span>
+            </div>
+            <p class="tour-description">Experience the famous Tsukiji fish market and learn to make sushi with a master chef.</p>
+            <div class="tour-price">
+              <span class="price">$65</span>
+              <span class="per-person">per person</span>
+            </div>
+            <button class="book-tour-btn">Book Tour</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cooking-classes">
+    <div class="container">
+      <div class="section-header">
+        <h2>Cooking Classes</h2>
+        <p>Learn to cook authentic dishes from around the world</p>
+      </div>
+      
+      <div class="classes-grid">
+        <div class="class-card">
+          <div class="class-image">
+            <img src="/assets/image/cooking-class-1.jpg" alt="Pasta Making Class">
+            <div class="class-duration">3 hours</div>
+          </div>
+          <div class="class-content">
+            <h3>Authentic Pasta Making</h3>
+            <p class="class-location"><i class="fas fa-map-marker-alt"></i> Rome, Italy</p>
+            <div class="class-info">
+              <span><i class="fas fa-mortar-pestle"></i> Hands-on</span>
+              <span><i class="fas fa-user-chef"></i> Chef Led</span>
+            </div>
+            <p class="class-description">Learn the art of fresh pasta making from scratch with a local Italian chef.</p>
+            <div class="class-price">
+              <span class="price">$75</span>
+              <span class="per-person">per person</span>
+            </div>
+            <button class="book-class-btn">Book Class</button>
+          </div>
+        </div>
+        
+        <div class="class-card">
+          <div class="class-image">
+            <img src="/assets/image/cooking-class-2.jpg" alt="Pastry Class">
+            <div class="class-duration">2.5 hours</div>
+          </div>
+          <div class="class-content">
+            <h3>French Patisserie Workshop</h3>
+            <p class="class-location"><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+            <div class="class-info">
+              <span><i class="fas fa-birthday-cake"></i> Pastry</span>
+              <span><i class="fas fa-award"></i> Certificate</span>
+            </div>
+            <p class="class-description">Master the techniques of French pastry making with a professional pâtissier.</p>
+            <div class="class-price">
+              <span class="price">$85</span>
+              <span class="per-person">per person</span>
+            </div>
+            <button class="book-class-btn">Book Class</button>
+          </div>
+        </div>
+        
+        <div class="class-card">
+          <div class="class-image">
+            <img src="/assets/image/cooking-class-3.jpg" alt="Thai Cooking Class">
+            <div class="class-duration">4 hours</div>
+          </div>
+          <div class="class-content">
+            <h3>Thai Cooking Masterclass</h3>
+            <p class="class-location"><i class="fas fa-map-marker-alt"></i> Chiang Mai, Thailand</p>
+            <div class="class-info">
+              <span><i class="fas fa-pepper-hot"></i> Spicy Cuisine</span>
+              <span><i class="fas fa-seedling"></i> Market Visit</span>
+            </div>
+            <p class="class-description">Visit local markets and learn to prepare authentic Thai dishes with traditional techniques.</p>
+            <div class="class-price">
+              <span class="price">$60</span>
+              <span class="per-person">per person</span>
+            </div>
+            <button class="book-class-btn">Book Class</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Hungry for More?</h2>
+        <p>Subscribe to our food newsletter for exclusive culinary experiences and offers</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="/assets/image/logo.svg" alt="Travel Explorer" class="footer-logo">
+          <p>Exploring the world, one journey at a time. Creating unforgettable travel experiences since 2010.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Tourism City</p>
+          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> info@travelexplorer.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Travel Explorer. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/dining.js"></script>
+  <script src="scripts/nav_bar_functionality.js"></script>
+</body>
+
+</html>

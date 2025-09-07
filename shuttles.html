@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="stylesheets/shuttles.css" class="css">
+  <link rel="stylesheet" href="stylesheets/shuttles.css" class="css">
+  <link rel="stylesheet" href="stylesheets/navbar.css" class="css">
+  <link rel="stylesheet" href="stylesheets/footer.css" class="css">
+  <link rel="icon" type="image/x-icon" href="assets/image/favicon.ico">
+  <title>Ayodhya tourism services - Make your travel Faster and Comfortable</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo"><img src="/assets/image/logo.svg" alt="logo"></div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="shuttles.html">Shuttles</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="guides.html">Guides</a></li>
+      <li><a href="dining.html">Dining</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login-signup-forgot-password.html" class="btn-login">Log-in</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hero-content">
+      <h1>Comfortable Shuttle Services</h1>
+      <p>Reliable transportation to your destinations with premium comfort and safety</p>
+    </div>
+  </section>
+
+  <section class="shuttle-types">
+    <div class="container">
+      <h2>Our Shuttle Services</h2>
+      <div class="types-grid">
+        <div class="type-card">
+          <div class="type-icon">
+            <i class="fas fa-plane"></i>
+          </div>
+          <h3>Airport Transfers</h3>
+          <p>Timely airport pickups and drop-offs with flight monitoring</p>
+          <ul>
+            <li>Flight tracking</li>
+            <li>45-minute waiting time</li>
+            <li>Luggage assistance</li>
+          </ul>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon">
+            <i class="fas fa-hotel"></i>
+          </div>
+          <h3>Hotel Transfers</h3>
+          <p>Seamless transportation between hotels and key locations</p>
+          <ul>
+            <li>Direct to lobby service</li>
+            <li>Multiple stop options</li>
+            <li>24/7 availability</li>
+          </ul>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon">
+            <i class="fas fa-mountain"></i>
+          </div>
+          <h3>Tourist Shuttles</h3>
+          <p>Comfortable rides to popular attractions and landmarks</p>
+          <ul>
+            <li>Fixed schedule</li>
+            <li>Multilingual drivers</li>
+            <li>Photo stops included</li>
+          </ul>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Group Transfers</h3>
+          <p>Spacious vehicles for families and large groups</p>
+          <ul>
+            <li>Up to 15 passengers</li>
+            <li>Extra luggage space</li>
+            <li>Custom pickup points</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section">
+    <div class="container">
+      <div class="booking-container">
+        <div class="booking-form">
+          <h2>Book Your Shuttle</h2>
+          <form id="shuttleBookingForm">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="pickup">Pickup Location</label>
+                <input type="text" id="pickup" placeholder="Enter address or landmark" required>
+              </div>
+              <div class="input-group">
+                <label for="dropoff">Dropoff Location</label>
+                <input type="text" id="dropoff" placeholder="Enter destination" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-group">
+                <label for="date">Pickup Date</label>
+                <input type="date" id="date" required>
+              </div>
+              <div class="input-group">
+                <label for="time">Pickup Time</label>
+                <input type="time" id="time" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-group">
+                <label for="passengers">Passengers</label>
+                <select id="passengers" required>
+                  <option value="1">1 Passenger</option>
+                  <option value="2">2 Passengers</option>
+                  <option value="3">3 Passengers</option>
+                  <option value="4">4 Passengers</option>
+                  <option value="5+">5+ Passengers</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="vehicle">Vehicle Type</label>
+                <select id="vehicle" required>
+                  <option value="standard">Standard Sedan</option>
+                  <option value="suv">SUV</option>
+                  <option value="van">Passenger Van</option>
+                  <option value="luxury">Luxury Vehicle</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="notes">Special Instructions</label>
+              <textarea id="notes" placeholder="Any special requests or instructions"></textarea>
+            </div>
+
+            <button type="submit" class="btn-book">Check Availability & Book</button>
+          </form>
+        </div>
+
+        <div class="booking-info">
+          <div class="info-card">
+            <h3>Why Choose Our Shuttles?</h3>
+            <div class="benefit-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>Punctual Service</h4>
+                <p>95% on-time arrival record</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>Professional Drivers</h4>
+                <p>Licensed, background-checked drivers</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>Clean Vehicles</h4>
+                <p>Sanitized and well-maintained</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>Fixed Pricing</h4>
+                <p>No surprise charges</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-example">
+            <h3>Sample Pricing</h3>
+            <div class="route-price">
+              <span>Airport to Downtown</span>
+              <span>$35</span>
+            </div>
+            <div class="route-price">
+              <span>City Center to Resort Area</span>
+              <span>$25</span>
+            </div>
+            <div class="route-price">
+              <span>Hotel to Attraction</span>
+              <span>$20</span>
+            </div>
+            <p class="note">Prices are per vehicle, not per person</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vehicle-showcase">
+    <div class="container">
+      <h2>Our Fleet</h2>
+      <div class="vehicle-grid">
+        <div class="vehicle-card">
+          <div class="vehicle-image" style="background-image: url('/assets/image/sedan.jpg');"></div>
+          <div class="vehicle-details">
+            <h3>Standard Sedan</h3>
+            <p>Comfortable ride for up to 3 passengers with luggage</p>
+            <div class="vehicle-specs">
+              <span><i class="fas fa-user"></i> 3 Passengers</span>
+              <span><i class="fas fa-suitcase"></i> 2 Bags</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <div class="vehicle-image" style="background-image: url('/assets/image/suv.jpg');"></div>
+          <div class="vehicle-details">
+            <h3>Premium SUV</h3>
+            <p>Spacious vehicle for up to 5 passengers</p>
+            <div class="vehicle-specs">
+              <span><i class="fas fa-user"></i> 5 Passengers</span>
+              <span><i class="fas fa-suitcase"></i> 4 Bags</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <div class="vehicle-image" style="background-image: url('/assets/image/van.jpg');"></div>
+          <div class="vehicle-details">
+            <h3>Passenger Van</h3>
+            <p>Ideal for groups and families with extra luggage</p>
+            <div class="vehicle-specs">
+              <span><i class="fas fa-user"></i> 8 Passengers</span>
+              <span><i class="fas fa-suitcase"></i> 8 Bags</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <div class="vehicle-image" style="background-image: url('/assets/image/luxury.jpg');"></div>
+          <div class="vehicle-details">
+            <h3>Luxury Vehicle</h3>
+            <p>Premium experience with professional chauffeur</p>
+            <div class="vehicle-specs">
+              <span><i class="fas fa-user"></i> 3 Passengers</span>
+              <span><i class="fas fa-suitcase"></i> 3 Bags</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Need a Custom Shuttle Solution?</h2>
+      <p>We provide specialized transportation for events, corporate functions, and special occasions.</p>
+      <button class="cta-btn">Contact Our Team</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="/assets/image/logo.svg" alt="Travel Explorer" class="footer-logo">
+          <p>Exploring the world, one journey at a time. Creating unforgettable travel experiences since 2010.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="shuttles.html">Shuttles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Tourism City</p>
+          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> info@travelexplorer.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Travel Explorer. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/shuttles.js"></script>
+  <script src="scripts/nav_bar_functionality.js"></script>
+</body>
+
+</html>

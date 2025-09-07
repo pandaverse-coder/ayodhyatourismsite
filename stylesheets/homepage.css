@@ -1,0 +1,413 @@
+* {
+      margin: 0;
+      /* padding: 0; */
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 10px 5%;
+      box-shadow: 0 3px 8px rgba(22, 22, 21, 0.411);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      color: #ff6600;
+    }
+
+    .btn-login {
+      background-color: #ff6600;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-login:hover {
+      background-color: #080808;
+    }
+
+    /* Mobile menu */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 3px 0;
+      transition: 0.3s;
+      border-radius: 3px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 5%;
+      background: url(/assets/image/Ram_Mandir\,_Ayodhya-hero.png) no-repeat center center;
+      background-size: cover;
+      color: white;
+      min-height: 80vh;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+      text-align: center;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      line-height: 1.6;
+    }
+
+    .hero-btn {
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .hero-btn:hover {
+      background-color: #e55a00;
+      transform: translateY(-2px);
+    }
+
+    .hero-content i {
+      display: block;
+      font-size: 2rem;
+      margin-top: 40px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .nav-links {
+        gap: 15px;
+      }
+      
+      .nav-links a {
+        font-size: 15px;
+      }
+      
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+      
+      .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: white;
+        width: 80%;
+        height: calc(100vh - 80px);
+        flex-direction: column;
+        padding: 40px 20px;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s;
+        gap: 25px;
+      }
+      
+      .nav-links.active {
+        left: 0;
+      }
+      
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+      
+      .hero-content p {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar {
+        padding: 10px 4%;
+      }
+      
+      .logo img {
+        height: 50px;
+      }
+      
+      .hero {
+        padding: 40px 4%;
+        min-height: 70vh;
+      }
+      
+      .hero-content h1 {
+        font-size: 1.8rem;
+      }
+      
+      .hero-content p {
+        font-size: 1rem;
+      }
+      
+      .hero-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      
+      .btn-login {
+        padding: 6px 12px;
+        font-size: 14px;
+      }
+    }
+
+        /* Benefits Section */
+    .benefits {
+      padding: 80px 5%;
+      background-color: #f9f9f9;
+    }
+
+    .benefits-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .benefits-header h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .benefits-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background-color: #ff6600;
+      border-radius: 2px;
+    }
+
+    .benefits-header p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .benefit-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .benefit-icon {
+      font-size: 3rem;
+      color: #ff6600;
+      margin-bottom: 20px;
+    }
+
+    .benefit-card h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .benefit-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* footer
+    
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #ff6600;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-section i {
+  margin-right: 10px;
+  color: #ff6600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  border-radius: 50%;
+  color: rgb(163, 63, 63);
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #dbd6d2;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #524f4f;
+}
+ */

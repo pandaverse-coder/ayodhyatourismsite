@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/stylesheets/contact.css" class="css">
+  <link rel="stylesheet" href="/stylesheets/navbar.css" class="css">
+  <link rel="stylesheet" href="/stylesheets/footer.css" class="css">
+  <link rel="icon" type="image/x-icon" href="assets/image/favicon.ico">
+  <title>Ayodhya tourism services - contact-us 24 hours service</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo"><img src="/assets/image/logo.svg" alt="logo"></div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="shuttles.html">Shuttles</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="guides.html">Guides</a></li>
+      <li><a href="dining.html">Dining</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="login-signup-forgot-password.html" class="btn-login">Log-in</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hero-content">
+      <h1>Get In Touch</h1>
+      <p>We're here to help you plan your next adventure</p>
+    </div>
+  </section>
+
+  <section class="contact-content">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <p>Have questions about your trip or need assistance? Reach out to our travel experts who are ready to help you create unforgettable memories.</p>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-details">
+              <h3>Address</h3>
+              <p>123 Travel Street<br>Tourism City, TC 12345</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info-details">
+              <h3>Phone</h3>
+              <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-details">
+              <h3>Email</h3>
+              <p>info@travelexplorer.com<br>support@travelexplorer.com</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="info-details">
+              <h3>Business Hours</h3>
+              <p>Monday-Friday: 8:00 AM - 8:00 PM<br>Saturday: 9:00 AM - 6:00 PM<br>Sunday: 10:00 AM - 4:00 PM</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form below and we'll get back to you within 24 hours</p>
+          </div>
+          
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <div class="error-message" id="firstNameError"></div>
+              </div>
+              
+              <div class="input-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <div class="error-message" id="lastNameError"></div>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="input-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+              </div>
+              
+              <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+                <div class="error-message" id="phoneError"></div>
+              </div>
+            </div>
+            
+            <div class="input-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="booking">Booking Assistance</option>
+                <option value="custom">Custom Tour Request</option>
+                <option value="complaint">Complaint</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="error-message" id="subjectError"></div>
+            </div>
+            
+            <div class="input-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+              <div class="error-message" id="messageError"></div>
+            </div>
+            
+            <div class="form-footer">
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How far in advance should I book my tour?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We recommend booking at least 2-3 months in advance for international tours and 1-2 months for domestic tours. For peak season travel, booking 4-6 months ahead ensures availability and better pricing.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is your cancellation policy?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Our cancellation policy varies by tour package. Generally, cancellations made 30+ days before departure receive a full refund, 15-29 days receive a 50% refund, and less than 14 days are non-refundable. Please check specific tour details for exact policies.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you offer travel insurance?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we strongly recommend travel insurance for all bookings. We partner with leading insurance providers to offer comprehensive coverage for trip cancellation, medical emergencies, lost luggage, and other travel-related issues.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can I customize a tour package?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! We specialize in creating customized itineraries tailored to your preferences, budget, and travel style. Contact our travel consultants to discuss your dream vacation and we'll create a personalized package just for you.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What payment methods do you accept?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, bank transfers, and in some cases, payment plans can be arranged for larger packages.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="container">
+      <h2>Find Us Here</h2>
+      <div class="map-container">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Interactive Map</h3>
+          <p>Our office location would be displayed here with an interactive map</p>
+          <button class="map-btn">View Larger Map</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="emergency-contact">
+    <div class="container">
+      <div class="emergency-card">
+        <div class="emergency-icon">
+          <i class="fas fa-life-ring"></i>
+        </div>
+        <div class="emergency-content">
+          <h2>24/7 Emergency Support</h2>
+          <p>For urgent assistance during your trip, call our emergency hotline</p>
+          <div class="emergency-phone">
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) HELP-NOW</span>
+          </div>
+          <p class="emergency-note">Available 24 hours a day, 7 days a week for registered travelers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="/assets/image/logo.svg" alt="Travel Explorer" class="footer-logo">
+          <p>Exploring the world, one journey at a time. Creating unforgettable travel experiences since 2010.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Tourism City</p>
+          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> info@travelexplorer.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Travel Explorer. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/contact.js"></script>
+  <script src="scripts/nav_bar_functionality.js"></script>
+</body>
+
+</html>
