@@ -276,12 +276,12 @@ function openTourModal(tourId) {
   
   // Show modal
   document.getElementById('tourModal').classList.add('active');
-  document.body.style.overflow = 'hidden'; // Prevent scrolling
+  document.body.style.overflow = 'hidden'; // Prevent background scrolling
 }
 
 function closeModal() {
   document.getElementById('tourModal').classList.remove('active');
-  document.body.style.overflow = ''; // Re-enable scrolling
+  document.body.style.overflow = ''; // Re-enable backgorund scrolling
 }
 
 // Show WhatsApp notification
@@ -363,4 +363,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Initial display of all tours
-displayTours(tours);
+displayTours(tours)

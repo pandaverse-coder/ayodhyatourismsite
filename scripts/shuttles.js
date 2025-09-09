@@ -1,16 +1,4 @@
-// Shuttles Page Functionality
-document.addEventListener('DOMContentLoaded', function() {
-  // Mobile menu toggle (if needed)
-  const mobileMenu = document.getElementById('mobile-menu');
-  const navLinks = document.getElementById('nav-links');
-  
-  if (mobileMenu && navLinks) {
-    mobileMenu.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
-    });
-  }
-
-  // Shuttle booking form functionality
+// Shuttle booking form functionality
   const bookingForm = document.getElementById('shuttleBookingForm');
   if (bookingForm) {
     bookingForm.addEventListener('submit', function(e) {
@@ -176,4 +164,3 @@ document.addEventListener('DOMContentLoaded', function() {
       alert(`You've selected: ${vehicleType}\nThis vehicle will be available for selection in the booking form.`);
     });
   });
-});

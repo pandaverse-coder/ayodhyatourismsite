@@ -219,6 +219,7 @@ body {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
 .newsletter-btn:hover {
