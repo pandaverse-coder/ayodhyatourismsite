@@ -250,6 +250,83 @@
             </div>
           </div>
 
+          <!-- Customer Experience Section -->
+    <section class="customer-experience-section" id="customer-experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Share Your Experience</h2>
+                <p>Tell us about your journey and help other travelers discover the beauty of Ayodhya</p>
+            </div>
+            
+            <div class="experience-container">
+                <div class="share-experience-form">
+                    <h3>Share Your Story</h3>
+                    <form id="experienceForm">
+                        <div class="form-group">
+                            <label for="authorName">Your Name</label>
+                            <input type="text" id="authorName" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="authorEmail">Email Address</label>
+                            <input type="email" id="authorEmail" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experienceTitle">Experience Title</label>
+                            <input type="text" id="experienceTitle" class="form-control" placeholder="Give your experience a title" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experienceLocation">Location</label>
+                            <input type="text" id="experienceLocation" class="form-control" placeholder="Where did you visit?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Rating</label>
+                            <div class="rating-input">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <label for="star5">★</label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4">★</label>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3">★</label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2">★</label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1">★</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experienceContent">Your Experience</label>
+                            <textarea id="experienceContent" class="form-control" placeholder="Share your travel experience..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experienceImage">Upload Image (Optional)</label>
+                            <input type="file" id="experienceImage" class="form-control" accept="image/*">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Share Your Experience</button>
+                        
+                        <div class="success-message" id="successMessage">
+                            <i class="fas fa-check-circle"></i> Thank you for sharing your experience! It will be reviewed and published soon.
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="customer-reviews" id="reviewsContainer">
+                    <h3>Recent Traveler Experiences</h3>
+                    <div id="reviewsList">
+                        <!-- Reviews will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
           <div class="sidebar-widget">
             <h3>Recent Posts</h3>
             <div class="recent-posts">

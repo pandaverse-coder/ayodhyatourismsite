@@ -561,7 +561,7 @@
   
   .timeline-item:nth-child(odd) .timeline-year,
   .timeline-item:nth-child(even) .timeline-year {
-    left: -45px;
+    left: -18px;
     right: auto;
   }
 }
@@ -590,7 +590,7 @@
   .slider-controls {
     position: static;
     transform: none;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 30px;
   }
   

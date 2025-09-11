@@ -585,6 +585,246 @@
   background: #e55a00;
 }
 
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+  display: none;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.guide-modal {
+  background: white;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.modal-close:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-body {
+  padding: 40px;
+}
+
+.guide-profile-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.guide-profile-image {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 250px;
+}
+
+.guide-profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.guide-profile-info h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.guide-profile-location {
+  color: #666;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.guide-profile-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.guide-profile-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.guide-profile-languages {
+  margin-bottom: 15px;
+}
+
+.guide-profile-languages span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.guide-profile-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+
+.guide-profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.guide-profile-section {
+  margin-bottom: 30px;
+}
+
+.guide-profile-section h3 {
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #ff6600;
+  padding-bottom: 8px;
+}
+
+.guide-profile-description {
+  line-height: 1.6;
+  color: #666;
+}
+
+.destinations-covered {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.destination-tag {
+  background: #f0f7ff;
+  color: #0066cc;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.review {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.review-author {
+  font-weight: 600;
+}
+
+.review-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.review-content {
+  color: #666;
+  line-height: 1.5;
+}
+
+.availability-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.calendar-header {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.calendar-day.available {
+  background: #e8f5e8;
+  color: #2e7d32;
+  cursor: pointer;
+}
+
+.calendar-day.unavailable {
+  background: #f5f5f5;
+  color: #9e9e9e;
+}
+
+.calendar-day.selected {
+  background: #ff6600;
+  color: white;
+}
+
+.book-now-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.book-now-btn:hover {
+  background: #e55a00;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .search-row {
@@ -598,6 +838,14 @@
   
   .intro-image {
     order: -1;
+  }
+
+  .guide-profile-header {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-profile-details {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -631,9 +879,37 @@
     gap: 15px;
     align-items: flex-start;
   }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .availability-calendar {
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 480px) {
   .page-hero {
-    padding: 60
-  }}
+    padding: 60px 5%;
+  }
+
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .guide-profile-image {
+    height: 200px;
+  }
+
+  .availability-calendar {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+  }
+
+  .calendar-day {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
+}
